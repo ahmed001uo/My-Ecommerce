@@ -75,7 +75,7 @@ class ListItemHome extends StatelessWidget {
                   .titleSmall!
                   .copyWith(color: Colors.green),
               children: [
-                TextSpan(text: "${product.price * {product.discountValue}}")
+                TextSpan(text: "${product.price * (product.discountValue)}")
               ])),
         ],
       ),
