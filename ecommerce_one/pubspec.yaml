@@ -33,8 +33,5 @@ flutter:
  
   uses-material-design: true
 
-  assets:
-    - assets/
-  #   - images/a_dot_ham.jpeg
 
   
