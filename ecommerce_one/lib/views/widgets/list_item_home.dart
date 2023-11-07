@@ -68,15 +68,15 @@ class ListItemHome extends StatelessWidget {
                 .titleMedium!
                 .copyWith(fontWeight: FontWeight.w600),
           ),
-          Text.rich(TextSpan(
+          Text.rich(TextSpan(children: [
+            TextSpan(
               text: "${product.price}\$",
-              style: Theme.of(context)
-                  .textTheme
-                  .titleSmall!
-                  .copyWith(color: Colors.green),
-              children: [
-                TextSpan(text: "${product.price * (product.discountValue)}")
-              ])),
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                  color: Colors.green, decoration: TextDecoration.lineThrough),
+            ),
+            TextSpan(
+                text: " ${product.price * (product.discountValue) / 100}\$")
+          ])),
         ],
       ),
     );
