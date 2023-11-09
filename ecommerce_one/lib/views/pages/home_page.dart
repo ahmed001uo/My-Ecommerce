@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         const SizedBox(
-          height: 6,
+          height: 0,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
               _buildHeaderOfList(context,
                   title: "Sale", description: "Super Summer Sale!!"),
               SizedBox(
-                height: 300,
+                height: 287,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: dummyPorducts
